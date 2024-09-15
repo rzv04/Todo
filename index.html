@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>TODO List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="body-container container flex-col">
+        <header class="header-container">
+          <img src="img/star.png" alt="Star" class="star-img" />
+          <h1 class="header-text">To-Do List</h1>
+        </header>
+
+        <ul class="todo-list">
+          <img src="img/cursor.png" alt="Cursor" class="cursor-img" />
+          <div class="todo-item-container">
+            <li class="todo-item">
+              <ion-icon
+                name="sparkles-outline"
+                class="sparkle-icon sparkle--blue"
+              ></ion-icon>
+              <span class="todo-text">Cook a healthy food</span>
+              <ion-icon name="trash-outline" class="trash-icon"></ion-icon>
+            </li>
+          </div>
+
+          <div class="todo-item-container">
+            <li class="todo-item">
+              <ion-icon
+                name="sparkles-outline"
+                class="sparkle-icon sparkle--pink"
+              ></ion-icon>
+              <span class="todo-text">Wake up early</span>
+              <ion-icon name="trash-outline" class="trash-icon"></ion-icon>
+            </li>
+          </div>
+
+          <div class="todo-item-container">
+            <li class="todo-item">
+              <ion-icon
+                name="sparkles-outline"
+                class="sparkle-icon sparkle--black"
+              ></ion-icon>
+              <span class="todo-text">Try to meditate</span>
+              <ion-icon name="trash-outline" class="trash-icon"></ion-icon>
+            </li>
+          </div>
+        </ul>
+        <div class="todo-item-container todo-add-container">
+          <div class="todo-item">
+            <ion-icon
+              name="sparkles-outline"
+              class="sparkle-icon sparkle--pink"
+            ></ion-icon>
+            <form action="#">
+              <input
+                type="input"
+                placeholder="Add New To-Do"
+                class="todo-item"
+              />
+            </form>
+            <ion-icon name="add-circle-outline" class="plus-icon"></ion-icon>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script type="module" src="script.js" defer></script>
+  </body>
+</html>
